@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob"></div>
+    <div class="header">
+        <h1 style="color: #a9a9a9;">Welcome, <span id="user-name" style="color: #007bff;"></span>!</h1>    
+        <button onclick="logout()" class="btn logout">Logout</button>
+    </div>
+    <div class="container">
+        <!-- <div class="header"> -->
+        <!-- </div> -->
+        <div class="todo">
+            <h2 style="color: #a9a9a9;">Your To-Do List</h2>
+            <div class="input-group">
+                <input style="border: 1px solid grey;" type="text" id="todoInput" placeholder="Enter a task">
+                <button onclick="addTask()" class="btn add">Add Task</button>
+            </div>
+            <ul id="todoList" class="todo-list"></ul>
+            <button onclick="clearAllTasks()" class="btn clear">Clear All Tasks</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

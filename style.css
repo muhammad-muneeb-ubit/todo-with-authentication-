@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f47;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 80%;
+    margin: 10px 30px;    
+    padding: 10px 15px;
+    font-size: 15px;
+    display: inline-block;
+    border: 0px;
+}
+input[type="text"], input[type="email"], input[type="password"]::placeholder{
+    color: grey !important;
+}
+#signup-name, input#signup-email, input#signup-password, #login-email, #login-password{
+    background-color: #0000004d !important;
+
+}
+.a-text{
+    color: #333;
+}
+.a-text:active, .a-text:visited {
+    color: #333;
+}
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+.logout{
+    width: 100px;
+}
+.todo {
+    margin-top: 20px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.delete{
+    background-color:#e93f2ed4;
+}
+.delete:hover{
+    background-color: #c0392b;
+}
+.edit-btn, .delete-btn{
+    width: 50%;
+    margin: 5px;
+    padding-top: 10px;
+}
+.btn-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.span-1{
+    padding: 15px 10px;
+    width: 50%;
+    overflow: auto;
+}
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+      180deg,
+      rgba(47, 184, 255,0.42) 31.77%,
+      #5c9df1 100%
+    );
+    mix-blend-mode: color-dodge;
+    animation: move 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translate(-100px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+  .card {
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+  }
